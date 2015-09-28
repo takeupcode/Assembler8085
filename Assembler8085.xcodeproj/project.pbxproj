@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		3E0831C61BB8BE440098B077 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E0831C51BB8BE440098B077 /* Main.cpp */; };
+		3E0831DB1BB8E7BE0098B077 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E0831DA1BB8E7BE0098B077 /* Main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		3E0831C01BB8BE440098B077 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		3E0831D61BB8E7BE0098B077 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,20 @@
 /* Begin PBXFileReference section */
 		3E0831C21BB8BE440098B077 /* Assembler8085 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assembler8085; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E0831C51BB8BE440098B077 /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
+		3E0831D81BB8E7BE0098B077 /* Assembler8085Design */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Assembler8085Design; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E0831DA1BB8E7BE0098B077 /* Main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Main.cpp; sourceTree = "<group>"; };
+		3E0831E41BB8ECA40098B077 /* Designer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Designer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3E0831BF1BB8BE440098B077 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E0831D51BB8E7BE0098B077 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +61,9 @@
 		3E0831B91BB8BE440098B077 = {
 			isa = PBXGroup;
 			children = (
+				3E0831E11BB8EBF60098B077 /* Submodules */,
 				3E0831C41BB8BE440098B077 /* Assembler8085 */,
+				3E0831D91BB8E7BE0098B077 /* Assembler8085Design */,
 				3E0831C31BB8BE440098B077 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				3E0831C21BB8BE440098B077 /* Assembler8085 */,
+				3E0831D81BB8E7BE0098B077 /* Assembler8085Design */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +83,38 @@
 				3E0831C51BB8BE440098B077 /* Main.cpp */,
 			);
 			path = Assembler8085;
+			sourceTree = "<group>";
+		};
+		3E0831D91BB8E7BE0098B077 /* Assembler8085Design */ = {
+			isa = PBXGroup;
+			children = (
+				3E0831DA1BB8E7BE0098B077 /* Main.cpp */,
+			);
+			path = Assembler8085Design;
+			sourceTree = "<group>";
+		};
+		3E0831E11BB8EBF60098B077 /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				3E0831E21BB8EC740098B077 /* Designer */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
+		3E0831E21BB8EC740098B077 /* Designer */ = {
+			isa = PBXGroup;
+			children = (
+				3E0831E31BB8EC8A0098B077 /* Designer */,
+			);
+			path = Designer;
+			sourceTree = "<group>";
+		};
+		3E0831E31BB8EC8A0098B077 /* Designer */ = {
+			isa = PBXGroup;
+			children = (
+				3E0831E41BB8ECA40098B077 /* Designer.h */,
+			);
+			path = Designer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +137,23 @@
 			productReference = 3E0831C21BB8BE440098B077 /* Assembler8085 */;
 			productType = "com.apple.product-type.tool";
 		};
+		3E0831D71BB8E7BE0098B077 /* Assembler8085Design */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E0831DE1BB8E7BE0098B077 /* Build configuration list for PBXNativeTarget "Assembler8085Design" */;
+			buildPhases = (
+				3E0831D41BB8E7BE0098B077 /* Sources */,
+				3E0831D51BB8E7BE0098B077 /* Frameworks */,
+				3E0831D61BB8E7BE0098B077 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Assembler8085Design;
+			productName = Assembler8085Design;
+			productReference = 3E0831D81BB8E7BE0098B077 /* Assembler8085Design */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +164,9 @@
 				ORGANIZATIONNAME = TakeUpCode;
 				TargetAttributes = {
 					3E0831C11BB8BE440098B077 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					3E0831D71BB8E7BE0098B077 = {
 						CreatedOnToolsVersion = 6.2;
 					};
 				};
@@ -109,6 +184,7 @@
 			projectRoot = "";
 			targets = (
 				3E0831C11BB8BE440098B077 /* Assembler8085 */,
+				3E0831D71BB8E7BE0098B077 /* Assembler8085Design */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +195,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E0831C61BB8BE440098B077 /* Main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E0831D41BB8E7BE0098B077 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E0831DB1BB8E7BE0098B077 /* Main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +297,24 @@
 			};
 			name = Release;
 		};
+		3E0831DC1BB8E7BE0098B077 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3E0831DD1BB8E7BE0098B077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -232,6 +334,16 @@
 				3E0831CB1BB8BE440098B077 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E0831DE1BB8E7BE0098B077 /* Build configuration list for PBXNativeTarget "Assembler8085Design" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E0831DC1BB8E7BE0098B077 /* Debug */,
+				3E0831DD1BB8E7BE0098B077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
