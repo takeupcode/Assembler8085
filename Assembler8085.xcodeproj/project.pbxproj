@@ -47,6 +47,15 @@
 		3E1E0B5E1BCACC18001CBBFF /* Org.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = Org.s; sourceTree = "<group>"; };
 		3E1E0B5F1BCACCC3001CBBFF /* Equ.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = Equ.s; sourceTree = "<group>"; };
 		3E1E0B601BCAFE5D001CBBFF /* Token.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
+		3E1E0B611BCB1D0E001CBBFF /* StringColumnOne.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = StringColumnOne.s; sourceTree = "<group>"; };
+		3E1E0B621BCB1D6B001CBBFF /* StringColumnOneEmpty.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = StringColumnOneEmpty.s; sourceTree = "<group>"; };
+		3E1E0B631BCB1DEC001CBBFF /* StringBeforeMnemonic.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = StringBeforeMnemonic.s; sourceTree = "<group>"; };
+		3E1E0B641BCB1E73001CBBFF /* StringUnexpected.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = StringUnexpected.s; sourceTree = "<group>"; };
+		3E1E0B651BCB2014001CBBFF /* CommaBeforeArgument.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = CommaBeforeArgument.s; sourceTree = "<group>"; };
+		3E1E0B661BCB206E001CBBFF /* CommaMultiple.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = CommaMultiple.s; sourceTree = "<group>"; };
+		3E1E0B671BCB20E9001CBBFF /* CommaMissing.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = CommaMissing.s; sourceTree = "<group>"; };
+		3E1E0B681BCB22B1001CBBFF /* StringNoEnd.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = StringNoEnd.s; sourceTree = "<group>"; };
+		3E1E0B691BCB2338001CBBFF /* MnemonicMissing.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = MnemonicMissing.s; sourceTree = "<group>"; };
 		3EACDB081BCA170600586F2F /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
 		3EACDB091BCA170600586F2F /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		3EACDB0C1BCA193800586F2F /* SyntaxErrorException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxErrorException.h; sourceTree = "<group>"; };
@@ -142,6 +151,15 @@
 				3E1E0B591BCABD4C001CBBFF /* Comments.s */,
 				3E1E0B5E1BCACC18001CBBFF /* Org.s */,
 				3E1E0B5F1BCACCC3001CBBFF /* Equ.s */,
+				3E1E0B611BCB1D0E001CBBFF /* StringColumnOne.s */,
+				3E1E0B621BCB1D6B001CBBFF /* StringColumnOneEmpty.s */,
+				3E1E0B631BCB1DEC001CBBFF /* StringBeforeMnemonic.s */,
+				3E1E0B641BCB1E73001CBBFF /* StringUnexpected.s */,
+				3E1E0B651BCB2014001CBBFF /* CommaBeforeArgument.s */,
+				3E1E0B661BCB206E001CBBFF /* CommaMultiple.s */,
+				3E1E0B671BCB20E9001CBBFF /* CommaMissing.s */,
+				3E1E0B681BCB22B1001CBBFF /* StringNoEnd.s */,
+				3E1E0B691BCB2338001CBBFF /* MnemonicMissing.s */,
 			);
 			path = AssemblyFiles;
 			sourceTree = "<group>";
