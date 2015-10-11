@@ -26,6 +26,10 @@ void Parser::parse ()
 {
     ifstream file;
     file.open(mFileName);
+    if (!file.is_open())
+    {
+        throw logic_error("Source file could not be opened.");
+    }
 
     int lineNumber = 0;
     std::string line;
