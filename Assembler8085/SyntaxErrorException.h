@@ -18,7 +18,7 @@ namespace Assembler8085
     {
     public:
         SyntaxErrorException (int line, int column, const std::string & message = std::string(""))
-        : std::logic_error("")
+        : std::logic_error(""), mLine(line), mColumn(column)
         {
             std::ostringstream stringStream;
             stringStream << "Syntax error at line:" << line << " column:" << column;
@@ -38,12 +38,24 @@ namespace Assembler8085
             return mMessage.c_str();
         }
 
+        int line ()
+        {
+            return mLine;
+        }
+
+        int column ()
+        {
+            return mColumn;
+        }
+
     protected:
         SyntaxErrorException ()
         : std::logic_error("")
         { }
 
         std::string mMessage;
+        int mLine;
+        int mColumn;
     };
 }
 

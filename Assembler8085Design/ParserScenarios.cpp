@@ -8,6 +8,7 @@
 #include "../Submodules/Designer/Designer/Designer.h"
 
 #include "../Assembler8085/Parser.h"
+#include "../Assembler8085/SyntaxErrorException.h"
 
 using namespace std;
 using namespace MuddledManaged;
@@ -28,5 +29,20 @@ DESIGNER_SCENARIO( GeneralParser, "Parsing/Normal", "Parser can parse file with 
 {
     Parser parser("Comments.s");
     parser.parse();
+}
+
+DESIGNER_SCENARIO( GeneralParser, "Parsing/Undefined", "Parser cannot parse file with undefined content." )
+{
+    Parser parser("Org.s");
+
+    try
+    {
+        parser.parse();
+    }
+    catch (SyntaxErrorException & e)
+    {
+        verifyEqual(8, e.line());
+        verifyEqual(13, e.column());
+    }
 }
 

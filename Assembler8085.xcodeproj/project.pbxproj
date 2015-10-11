@@ -44,6 +44,8 @@
 		3E1E0B581BCABD1C001CBBFF /* Empty.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = Empty.s; sourceTree = "<group>"; };
 		3E1E0B591BCABD4C001CBBFF /* Comments.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = Comments.s; sourceTree = "<group>"; };
 		3E1E0B5A1BCABECC001CBBFF /* ParserScenarios.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParserScenarios.cpp; sourceTree = "<group>"; };
+		3E1E0B5E1BCACC18001CBBFF /* Org.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = Org.s; sourceTree = "<group>"; };
+		3E1E0B5F1BCACCC3001CBBFF /* Equ.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = Equ.s; sourceTree = "<group>"; };
 		3EACDB081BCA170600586F2F /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
 		3EACDB091BCA170600586F2F /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		3EACDB0C1BCA193800586F2F /* SyntaxErrorException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxErrorException.h; sourceTree = "<group>"; };
@@ -136,6 +138,8 @@
 			children = (
 				3E1E0B581BCABD1C001CBBFF /* Empty.s */,
 				3E1E0B591BCABD4C001CBBFF /* Comments.s */,
+				3E1E0B5E1BCACC18001CBBFF /* Org.s */,
+				3E1E0B5F1BCACCC3001CBBFF /* Equ.s */,
 			);
 			path = AssemblyFiles;
 			sourceTree = "<group>";
