@@ -9,6 +9,9 @@
 #define Parser_h
 
 #include <string>
+#include <vector>
+
+#include "Token.h"
 
 namespace Assembler8085
 {
@@ -21,7 +24,15 @@ namespace Assembler8085
         void parse ();
 
     private:
+        void placeToken (Token & token);
+
         std::string mFileName;
+        Token mLabel;
+        Token mMnemonic;
+        std::vector<Token> mArguments;
+        bool mLabelComplete;
+        bool mMnemonicComplete;
+        int mLineLength;
     };
 }
 
