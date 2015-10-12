@@ -32,6 +32,7 @@ namespace Assembler8085
         std::vector<Token> mArguments;
         bool mLabelComplete;
         bool mMnemonicComplete;
+        bool mCommaNeeded;
         int mLineLength;
     };
 }

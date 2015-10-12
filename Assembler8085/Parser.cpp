@@ -41,6 +41,7 @@ void Parser::parse ()
         string text = "";
         mLabelComplete = false;
         mMnemonicComplete = false;
+        mCommaNeeded = false;
         bool stringMode = false;
 
         for (char & c : line)
@@ -106,15 +107,21 @@ void Parser::parse ()
             }
             else if (c == ',' && !stringMode)
             {
-                if (text.empty() || mArguments.empty())
+                if (!text.empty())
+                {
+                    // A comma could come right after a parameter which means that we
+                    // haven't yet placed the parameter. Do that first and then see
+                    // if a comma is needed.
+                    Token token(lineNumber, tokenColumnNumber, text);
+                    placeToken(token);
+                    text = "";
+                }
+                if (!mCommaNeeded)
                 {
                     string message = "Unexpected comma";
                     throw SyntaxErrorException(lineNumber, columnNumber, message);
                 }
-                Token token(lineNumber, tokenColumnNumber, text);
-                placeToken(token);
-                text = "";
-                break;
+                mCommaNeeded = false;
             }
             else
             {
@@ -166,6 +173,12 @@ void Parser::placeToken (Token & token)
     }
     else
     {
+        if (mCommaNeeded)
+        {
+            string message = "Expected comma";
+            throw SyntaxErrorException(token.line(), token.column(), message);
+        }
         mArguments.push_back(token);
+        mCommaNeeded = true;
     }
 }
