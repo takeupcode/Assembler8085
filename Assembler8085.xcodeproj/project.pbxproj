@@ -56,6 +56,7 @@
 		3E1E0B671BCB20E9001CBBFF /* CommaMissing.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = CommaMissing.s; sourceTree = "<group>"; };
 		3E1E0B681BCB22B1001CBBFF /* StringNoEnd.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = StringNoEnd.s; sourceTree = "<group>"; };
 		3E1E0B691BCB2338001CBBFF /* MnemonicMissing.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = MnemonicMissing.s; sourceTree = "<group>"; };
+		3E1E0B6A1BCB3899001CBBFF /* MnemonicParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicParser.h; sourceTree = "<group>"; };
 		3EACDB081BCA170600586F2F /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
 		3EACDB091BCA170600586F2F /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		3EACDB0C1BCA193800586F2F /* SyntaxErrorException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxErrorException.h; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 				3EACDB091BCA170600586F2F /* Parser.h */,
 				3EACDB0C1BCA193800586F2F /* SyntaxErrorException.h */,
 				3E1E0B601BCAFE5D001CBBFF /* Token.h */,
+				3E1E0B6A1BCB3899001CBBFF /* MnemonicParser.h */,
 			);
 			path = Assembler8085;
 			sourceTree = "<group>";

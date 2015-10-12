@@ -8,6 +8,7 @@
 #ifndef Parser_h
 #define Parser_h
 
+#include <memory>
 #include <string>
 #include <vector>
 
@@ -15,6 +16,8 @@
 
 namespace Assembler8085
 {
+    class MnemonicParser;
+
     class Parser
     {
     public:
@@ -34,6 +37,7 @@ namespace Assembler8085
         bool mMnemonicComplete;
         bool mCommaNeeded;
         int mLineLength;
+        std::vector<std::unique_ptr<MnemonicParser>> mMnemonicParsers;
     };
 }
 

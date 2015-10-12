@@ -9,6 +9,7 @@
 
 #include "Parser.h"
 #include "SyntaxErrorException.h"
+#include "MnemonicParser.h"
 
 using namespace std;
 using namespace Assembler8085;
@@ -153,6 +154,26 @@ void Parser::parse ()
         {
             string message = "Mnemonic not found";
             throw SyntaxErrorException(lineNumber, mLineLength, message);
+        }
+
+        if (mMnemonicComplete)
+        {
+            bool mnemonicParserFound = false;
+            for (unique_ptr<MnemonicParser> & mnemonicParser : mMnemonicParsers)
+            {
+                if (mnemonicParser->mnemonic() == mMnemonic.text())
+                {
+                    mnemonicParser->parse(mLineLength, mLabel, mArguments);
+                    
+                    mnemonicParserFound = true;
+                }
+            }
+
+            if (!mnemonicParserFound)
+            {
+                string message = "Unexpected mnemonic found";
+                throw SyntaxErrorException(lineNumber, mMnemonic.column(), message);
+            }
         }
     }
 
