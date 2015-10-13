@@ -43,6 +43,7 @@ void Parser::parse ()
         mLabelComplete = false;
         mMnemonicComplete = false;
         mCommaNeeded = false;
+        mArguments.clear();
         bool stringMode = false;
 
         for (char & c : line)
@@ -166,6 +167,7 @@ void Parser::parse ()
                     mnemonicParser->parse(mLineLength, mLabel, mArguments);
                     
                     mnemonicParserFound = true;
+                    break;
                 }
             }
 
