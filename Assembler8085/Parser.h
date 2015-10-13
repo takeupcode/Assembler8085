@@ -10,6 +10,7 @@
 
 #include <memory>
 #include <string>
+#include <unordered_map>
 #include <vector>
 
 #include "Token.h"
@@ -26,6 +27,11 @@ namespace Assembler8085
 
         void parse ();
 
+        void addParser (MnemonicParser * parser);
+
+        bool addSymbol (const std::string & name, const std::string & value);
+        bool getSymbol (const std::string & name, std::string & value);
+
     private:
         void placeToken (Token & token);
 
@@ -38,6 +44,7 @@ namespace Assembler8085
         bool mCommaNeeded;
         int mLineLength;
         std::vector<std::unique_ptr<MnemonicParser>> mMnemonicParsers;
+        std::unordered_map<std::string, std::string> mSymbols;
     };
 }
 

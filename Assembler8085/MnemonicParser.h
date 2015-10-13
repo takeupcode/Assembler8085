@@ -26,14 +26,14 @@ namespace Assembler8085
         virtual ~MnemonicParser ()
         { }
 
-        virtual void parse (int lineLength, const Token & label, const std::vector<Token> arguments) = 0;
+        virtual void parse (int lineLength, const Token & label, const std::vector<Token> arguments) const = 0;
 
-        std::string mnemonic ()
+        std::string mnemonic () const
         {
             return mMnemonic;
         }
 
-    private:
+    protected:
         std::string mMnemonic;
         Parser & mParser;
     };

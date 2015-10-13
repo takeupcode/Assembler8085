@@ -24,17 +24,17 @@ namespace Assembler8085
 
         void parse ();
 
-        int line ()
+        int line () const
         {
             return mLine;
         }
 
-        int column ()
+        int column () const
         {
             return mColumn;
         }
 
-        std::string text ()
+        std::string text () const
         {
             return mText;
         }

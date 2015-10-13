@@ -38,12 +38,12 @@ namespace Assembler8085
             return mMessage.c_str();
         }
 
-        int line ()
+        int line () const
         {
             return mLine;
         }
 
-        int column ()
+        int column () const
         {
             return mColumn;
         }

@@ -11,6 +11,7 @@
 		3E0831DB1BB8E7BE0098B077 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E0831DA1BB8E7BE0098B077 /* Main.cpp */; };
 		3E1E0B5B1BCABECC001CBBFF /* ParserScenarios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0B5A1BCABECC001CBBFF /* ParserScenarios.cpp */; settings = {ASSET_TAGS = (); }; };
 		3E1E0B5C1BCAC16F001CBBFF /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EACDB081BCA170600586F2F /* Parser.cpp */; };
+		3E1E0B6D1BCCB278001CBBFF /* ParserEquScenarios.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3E1E0B6C1BCCB278001CBBFF /* ParserEquScenarios.cpp */; settings = {ASSET_TAGS = (); }; };
 		3EACDB0A1BCA170600586F2F /* Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3EACDB081BCA170600586F2F /* Parser.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		3E1E0B681BCB22B1001CBBFF /* StringNoEnd.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = StringNoEnd.s; sourceTree = "<group>"; };
 		3E1E0B691BCB2338001CBBFF /* MnemonicMissing.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; path = MnemonicMissing.s; sourceTree = "<group>"; };
 		3E1E0B6A1BCB3899001CBBFF /* MnemonicParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicParser.h; sourceTree = "<group>"; };
+		3E1E0B6B1BCB6280001CBBFF /* MnemonicParserEqu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicParserEqu.h; sourceTree = "<group>"; };
+		3E1E0B6C1BCCB278001CBBFF /* ParserEquScenarios.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParserEquScenarios.cpp; sourceTree = "<group>"; };
 		3EACDB081BCA170600586F2F /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
 		3EACDB091BCA170600586F2F /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		3EACDB0C1BCA193800586F2F /* SyntaxErrorException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxErrorException.h; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 				3EACDB0C1BCA193800586F2F /* SyntaxErrorException.h */,
 				3E1E0B601BCAFE5D001CBBFF /* Token.h */,
 				3E1E0B6A1BCB3899001CBBFF /* MnemonicParser.h */,
+				3E1E0B6B1BCB6280001CBBFF /* MnemonicParserEqu.h */,
 			);
 			path = Assembler8085;
 			sourceTree = "<group>";
@@ -118,6 +122,7 @@
 				3E1E0B571BCAB9CF001CBBFF /* AssemblyFiles */,
 				3E0831DA1BB8E7BE0098B077 /* Main.cpp */,
 				3E1E0B5A1BCABECC001CBBFF /* ParserScenarios.cpp */,
+				3E1E0B6C1BCCB278001CBBFF /* ParserEquScenarios.cpp */,
 			);
 			path = Assembler8085Design;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			files = (
 				3E1E0B5C1BCAC16F001CBBFF /* Parser.cpp in Sources */,
 				3E1E0B5B1BCABECC001CBBFF /* ParserScenarios.cpp in Sources */,
+				3E1E0B6D1BCCB278001CBBFF /* ParserEquScenarios.cpp in Sources */,
 				3E0831DB1BB8E7BE0098B077 /* Main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -203,3 +203,27 @@ void Parser::placeToken (Token & token)
         mCommaNeeded = true;
     }
 }
+
+void Parser::addParser (MnemonicParser * parser)
+{
+    mMnemonicParsers.push_back(unique_ptr<MnemonicParser>(parser));
+}
+
+bool Parser::addSymbol (const std::string & name, const std::string & value)
+{
+    return mSymbols.insert({name, value}).second;
+}
+
+bool Parser::getSymbol (const std::string & name, std::string & value)
+{
+    auto search = mSymbols.find(name);
+    if (search != mSymbols.end())
+    {
+        value = search->second;
+        return true;
+    }
+    
+    value = "";
+    return false;
+}
+
