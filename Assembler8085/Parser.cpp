@@ -160,7 +160,7 @@ void Parser::parse ()
         if (mMnemonicComplete)
         {
             bool mnemonicParserFound = false;
-            for (unique_ptr<MnemonicParser> & mnemonicParser : mMnemonicParsers)
+            for (const shared_ptr<MnemonicParser> & mnemonicParser : mMnemonicParsers)
             {
                 if (mnemonicParser->mnemonic() == mMnemonic.text())
                 {
@@ -206,9 +206,9 @@ void Parser::placeToken (Token & token)
     }
 }
 
-void Parser::addParser (MnemonicParser * parser)
+void Parser::addParser (const std::shared_ptr<MnemonicParser> & parser)
 {
-    mMnemonicParsers.push_back(unique_ptr<MnemonicParser>(parser));
+    mMnemonicParsers.push_back(parser);
 }
 
 bool Parser::addSymbol (const std::string & name, const std::string & value)
@@ -216,7 +216,7 @@ bool Parser::addSymbol (const std::string & name, const std::string & value)
     return mSymbols.insert({name, value}).second;
 }
 
-bool Parser::getSymbol (const std::string & name, std::string & value)
+bool Parser::getSymbol (const std::string & name, std::string & value) const
 {
     auto search = mSymbols.find(name);
     if (search != mSymbols.end())

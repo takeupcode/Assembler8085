@@ -22,8 +22,6 @@ namespace Assembler8085
         virtual ~Token ()
         { }
 
-        void parse ();
-
         int line () const
         {
             return mLine;

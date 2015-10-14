@@ -27,10 +27,10 @@ namespace Assembler8085
 
         void parse ();
 
-        void addParser (MnemonicParser * parser);
+        void addParser (const std::shared_ptr<MnemonicParser> & parser);
 
         bool addSymbol (const std::string & name, const std::string & value);
-        bool getSymbol (const std::string & name, std::string & value);
+        bool getSymbol (const std::string & name, std::string & value) const;
 
     private:
         void placeToken (Token & token);
@@ -43,7 +43,7 @@ namespace Assembler8085
         bool mMnemonicComplete;
         bool mCommaNeeded;
         int mLineLength;
-        std::vector<std::unique_ptr<MnemonicParser>> mMnemonicParsers;
+        std::vector<const std::shared_ptr<MnemonicParser>> mMnemonicParsers;
         std::unordered_map<std::string, std::string> mSymbols;
     };
 }

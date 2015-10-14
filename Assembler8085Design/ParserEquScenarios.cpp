@@ -24,7 +24,7 @@ DESIGNER_SCENARIO( GeneralParser, "Construction/Normal", "MnemonicParserEqu can 
 DESIGNER_SCENARIO( GeneralParser, "Parsing/Normal", "ParserEqu can parse file." )
 {
     Parser parser("Equ.s");
-    MnemonicParserEqu * parserEqu = new MnemonicParserEqu("equ", parser);
+    shared_ptr<MnemonicParserEqu> parserEqu(new MnemonicParserEqu("equ", parser));
     parser.addParser(parserEqu);
     parser.parse();
 
