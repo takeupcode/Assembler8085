@@ -60,6 +60,8 @@
 		3E1E0B6A1BCB3899001CBBFF /* MnemonicParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicParser.h; sourceTree = "<group>"; };
 		3E1E0B6B1BCB6280001CBBFF /* MnemonicParserEqu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MnemonicParserEqu.h; sourceTree = "<group>"; };
 		3E1E0B6C1BCCB278001CBBFF /* ParserEquScenarios.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParserEquScenarios.cpp; sourceTree = "<group>"; };
+		3E1E0B6E1BCF49DB001CBBFF /* Output.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Output.h; sourceTree = "<group>"; };
+		3E1E0B6F1BCF4AEE001CBBFF /* SymbolReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SymbolReference.h; sourceTree = "<group>"; };
 		3EACDB081BCA170600586F2F /* Parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parser.cpp; sourceTree = "<group>"; };
 		3EACDB091BCA170600586F2F /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
 		3EACDB0C1BCA193800586F2F /* SyntaxErrorException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyntaxErrorException.h; sourceTree = "<group>"; };
@@ -112,6 +114,8 @@
 				3E1E0B601BCAFE5D001CBBFF /* Token.h */,
 				3E1E0B6A1BCB3899001CBBFF /* MnemonicParser.h */,
 				3E1E0B6B1BCB6280001CBBFF /* MnemonicParserEqu.h */,
+				3E1E0B6E1BCF49DB001CBBFF /* Output.h */,
+				3E1E0B6F1BCF4AEE001CBBFF /* SymbolReference.h */,
 			);
 			path = Assembler8085;
 			sourceTree = "<group>";
